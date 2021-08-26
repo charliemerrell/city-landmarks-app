@@ -1,0 +1,8 @@
+Cities
+- name
+- population
+
+Landmarks
+- city
+- name
+- imageUrl
