@@ -1,13 +1,15 @@
 <h1>Cities</h1>
 {{#each cities}}
-    <article>
-        <label>
-            Name:
-            <span>{{this.name}}</span>
-        </label>
-        <label>
-            Population:
-            <span>{{this.population}}</span>
-        </label>
-    </article>
+    <a href="/citydetails/{{this.id}}">
+        <article>
+            <label>
+                Name:
+                <span>{{this.name}}</span>
+            </label>
+            <label>
+                Population:
+                <span>{{this.population}}</span>
+            </label>
+        </article>
+    </a>
 {{/each}}

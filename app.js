@@ -32,7 +32,7 @@ app.get("/citydetails/:id", async (req, res) => {
     if (!city) {
         return res.sendStatus(404);
     }
-    let cityObj = new City();
+    res.render("city", { city });
 });
 
 app.get("/cities", async (req, res) => {

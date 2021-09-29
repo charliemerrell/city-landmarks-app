@@ -1,0 +1,12 @@
+<h1>{{ city.name }}</h1>
+<h2>Landmarks</h2>
+{{#each city.landmarks}}
+    <article>
+        <label>
+            Name:
+            <span>{{this.name}}</span>
+        </label>
+        <br>
+        <img src={{this.imageUrl}}>
+    </article>
+{{/each}}
